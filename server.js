@@ -68,7 +68,7 @@ app.get('/', function(req, res){
 				json.id = $(product).attr('id').substring(1);
 				json.link = $($('.name a')[0]).attr('href');
 				//getting names from the url
-				json.itemName = json.link.substr(json.link.lastIndexOf('/') + 1).split('/').join(' ');
+				json.itemName = $($('.name a')[0]).html().trim();
 				json.isSoldOut = ($('.sold_out').length > 0) ? true : false;
 				$('.image img').each(function(i,image) {
 					json.images.push($(image).attr('src'));

@@ -1,0 +1,14 @@
+{
+  "name": "luxuryexhcange-scraper",
+  "version": "0.0.1",
+  "description": "Scraper",
+  "main": "server.js",
+  "author": "Kai",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "cheerio": "latest",
+    "express": "latest",
+    "node-defer": "^1.0.1",
+    "request": "latest"
+  }
+}
